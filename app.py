@@ -5,7 +5,7 @@ import streamlit as st
 st.image('profile.jpg', width=300)        
 st.title("Anas Awadalla")
 
-st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas-awadalla) | 🔗 [LinkedIn](https://www.linkedin.com/in/anas-awadalla/)")
+st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🔗 [LinkedIn](https://www.linkedin.com/in/anas-awadalla/)")
 
 # make a section for bio
 st.header("👋🏽 Bio")
