@@ -28,14 +28,14 @@ st.write("Abstract: *Unpredictable ML model behavior on unseen data, especially 
 
 # make a section for work experience    
 st.header("👨🏽‍💻 Work Experience")
-st.write("Software Engineering Intern at Stripe in **Summer 2022**")
+st.write("Software Engineering Intern at **Stripe** in Summer 2022")
 st.write("")
 
-st.write("Software Engineering Intern at Amazon in **Summer 2021**")
+st.write("Software Engineering Intern at **Amazon** in Summer 2021")
 
 st.write("")
 
-st.write("Machine Learning Engineering Intern at Allen Institute for AI Incubator startup in **Spring 2021**")
+st.write("Machine Learning Engineering Intern at **Allen Institute for AI Incubator startup** in Spring 2021")
 
 st.header("👨🏽‍🏫 Teaching Experience")
 st.write("Teaching Assistant for [CSE 344](https://sites.google.com/cs.washington.edu/cse344-21au/home?pli=1) in **Fall 2021**")
