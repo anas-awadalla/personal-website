@@ -56,8 +56,8 @@ def lm_are_zeroshot_planners(st):
     )
 
     def generate_step(prompt):
-        tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-base")
-        model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-base")
+        tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-small")
+        model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small")
 
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
         output = model.generate(input_ids, max_length=20, do_sample=True, num_return_sequences=1)
