@@ -60,7 +60,7 @@ def lm_are_zeroshot_planners(st):
         model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small")
 
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
-        output = model.generate(input_ids, max_length=20, do_sample=True, num_return_sequences=1)
+        output = model.generate(input_ids, max_length=20, do_sample=True, num_return_sequences=1, temperature=0.7)
         output = tokenizer.decode(output[0], skip_special_tokens=True)
         return output
 
