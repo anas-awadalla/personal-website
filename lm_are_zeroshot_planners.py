@@ -5,15 +5,15 @@ def lm_are_zeroshot_planners(st):
     st.write(
         """
         This is the first of a series of blog posts for the [CSE 599](https://cse599d1wi23.notion.site/cse599d1wi23/CSE-599-D1-Winter-2023-fe73cb56c11b45efb34e94c090480791) course I am taking. 
-        For each of these posts I will be explaining a paper and impelmenting some of the ideas in it.
-        For this post I will be writring about [Language Models Are Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents](https://arxiv.org/abs/2201.07207).       
+        For each of these posts I will be explaining a paper and implementing some of the ideas in it.
+        For this post I will be writing about [Language Models Are Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents](https://arxiv.org/abs/2201.07207).       
         """
     )
     st.subheader("Overview")
     st.write(
         """
         This paper proposes using LLMs to dissect high level goals into actionable steps. The authors show that without any additional training a pre-training LLMs can 
-        be prompted to generate a sequence of actions that can be used to achieve a given goal and show that this can be used to control an emodied agent.
+        be prompted to generate a sequence of actions that can be used to achieve a given goal and show that this can be used to control an embodied agent.
         """
     )
     st.subheader("Technical Notes")
@@ -23,18 +23,19 @@ def lm_are_zeroshot_planners(st):
 
     ###### Evaluation Metrics
     The authors evaluate their method using the following metrics:
-    - **Executability**: This measures weather a procedure is executable, even if it is incorrect, within the confins of the simulation.
+    - **Executability**: This measures weather a procedure is executable, even if it is incorrect, within the confines of the simulation.
     - **Correctness**: This is a metric that assess weather human annotators believe the procedure is correct.
 
     ##### Modeling
     The first part of the modeling pipeline is a **Planning LM**:\\
-        -  The authors used pre-trained LLMs to compose generate the steps\\
+        - The authors used pre-trained LLMs to compose generation steps\\
         - They achieved best results when using GPT-3 and Codex. 
+        - Interestingly a 12B code LM outperforms a 13B GPT-3 model which maybe alludes to how the structure of code text can improve performance.\\
     
     The second part of the modeling pipeline is a **Translation LM**:\\
         - This is a model used to embed all the possible actions as well as each generated step\\
         - The each generated step is then mapped to one of the possible actions based on cosine distance
-        - This is done after generating each individual step and the mapped action is concatenated to the prompt for the next gneration.
+        - This is done after generating each individual step and the mapped action is concatenated to the prompt for the next generation.
 
     ##### Prompting
     - The authors prompted the **Planning LM** with a single example that is similar to the query action.
@@ -44,7 +45,7 @@ def lm_are_zeroshot_planners(st):
         Step 1: <step 1>
         ....
         ```
-    - For each step the authors sampled multiple potential generations and used the **translation LM** to find the one with highest similarity to an enviornment action.
+    - For each step the authors sampled multiple potential generations and used the **translation LM** to find the one with highest similarity to an environment action.
     """)
     actions = """gather ingredients, preheat oven, grease and flour pan, sift dry ingredients, cream butter and sugar, beat in eggs, stir in vanilla, alternate adding dry ingredients and milk, pour batter into pan, tap pan gently, place in oven, bake according to recipe, test for doneness, remove from oven, cool in pan, turn out onto wire rack, make frosting or glaze, mix sugar and butter, beat in vanilla and milk, beat frosting until smooth, spread frosting over cake, decorate with sprinkles, cut and serve, store leftovers, refrigerate if necessary, heat slice in microwave, enjoy, make simple syrup, boil sugar and water, brush over cooled layers, make chocolate ganache, chop chocolate, heat cream, pour over chocolate, whisk until smooth, cool and thicken, frost cake, make meringue frosting, beat egg whites and sugar, add vanilla, frost cake, make fruit filling or topping, wash and prepare fruit, cut into pieces, mix with sugar and cornstarch, spread over cake layer, top with fresh fruit, make whipped cream frosting, beat heavy cream, add sugar and vanilla, beat until stiff peaks form"""
     st.subheader("Trying out the paper's ideas")
@@ -88,7 +89,7 @@ def lm_are_zeroshot_planners(st):
     if 'step_1' in st.session_state and 'fix_step_1' not in st.session_state:
         st.write(
             """
-            Now that we have our generated step we need to map it to a valid action. Ideally this would be using a \'translator LM\' like BERT to find the most similar enviornment action. However, **to avoid bloating my website I will choose the action with the most overlapping words to the generated text**.
+            Now that we have our generated step we need to map it to a valid action. Ideally this would be using a \'translator LM\' like BERT to find the most similar environment action. However, **to avoid bloating my website I will choose the action with the most overlapping words to the generated text**.
             """
         )
         closest_action = max(actions.split(", "), key=lambda x: len(set(x.split(" ")).intersection(set(st.session_state['step_1'].split(" ")))))
