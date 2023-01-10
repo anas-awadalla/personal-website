@@ -27,14 +27,14 @@ def lm_are_zeroshot_planners(st):
     - **Correctness**: This is a metric that assess weather human annotators believe the procedure is correct.
 
     ##### Modeling
-    The first part of the modeling pipeline is a **Planning LM**:\\
-        - The authors used pre-trained LLMs to compose generation steps\\
-        - They achieved best results when using GPT-3 and Codex. 
-        - Interestingly a 12B code LM outperforms a 13B GPT-3 model which maybe alludes to how the structure of code text can improve performance.\\
+    The first part of the modeling pipeline is a **Planning LM**:
+    - The authors used pre-trained LLMs to compose generation steps.\\
+    - They achieved best results when using GPT-3 and Codex.\\
+    - Interestingly a 12B code LM outperforms a 13B GPT-3 model which maybe alludes to how the structure of code text can improve performance.
     
-    The second part of the modeling pipeline is a **Translation LM**:\\
-        - This is a model used to embed all the possible actions as well as each generated step\\
-        - The each generated step is then mapped to one of the possible actions based on cosine distance
+    The second part of the modeling pipeline is a **Translation LM**:
+        - This is a model used to embed all the possible actions as well as each generated step.\\
+        - The each generated step is then mapped to one of the possible actions based on cosine distance.\\
         - This is done after generating each individual step and the mapped action is concatenated to the prompt for the next generation.
 
     ##### Prompting
