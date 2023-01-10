@@ -16,27 +16,41 @@ def lm_are_zeroshot_planners(st):
         be prompted to generate a sequence of actions that can be used to achieve a given goal and show that this can be used to control an emodied agent.
         """
     )
-    st.subheader("Technical Details")
+    st.subheader("Technical Notes")
     st.markdown("""
     ##### Task
     Given a list of possible actions and a target task, the goal is to compose step by step actions that can be used to achieve the target task. 
 
     ###### Evaluation Metrics
     The authors evaluate their method using the following metrics:
-    - **Executability**: The percentage of tasks that the agent was able to complete.
-    - **Correctness**: The percentage of tasks that the agent was able to complete.
+    - **Executability**: This measures weather a procedure is executable, even if it is incorrect, within the confins of the simulation.
+    - **Correctness**: This is a metric that assess weather human annotators believe the procedure is correct.
 
     ##### Modeling
-
+    The first part of the modeling pipeline is a **Planning LM**:\\
+        -  The authors used pre-trained LLMs to compose generate the steps\\
+        - They achieved best results when using GPT-3 and Codex. 
+    
+    The second part of the modeling pipeline is a **Translation LM**:\\
+        - This is a model used to embed all the possible actions as well as each generated step\\
+        - The each generated step is then mapped to one of the possible actions based on cosine distance
+        - This is done after generating each individual step and the mapped action is concatenated to the prompt for the next gneration.
 
     ##### Prompting
-
+    - The authors prompted the **Planning LM** with a single example that is similar to the query action.
+    - The prompt is formatted as follows:
+        ```
+        Task: <target task>
+        Step 1: <step 1>
+        ....
+        ```
+    - For each step the authors sampled multiple potential generations and used the **translation LM** to find the one with highest similarity to an enviornment action.
     """)
     actions = """gather ingredients, preheat oven, grease and flour pan, sift dry ingredients, cream butter and sugar, beat in eggs, stir in vanilla, alternate adding dry ingredients and milk, pour batter into pan, tap pan gently, place in oven, bake according to recipe, test for doneness, remove from oven, cool in pan, turn out onto wire rack, make frosting or glaze, mix sugar and butter, beat in vanilla and milk, beat frosting until smooth, spread frosting over cake, decorate with sprinkles, cut and serve, store leftovers, refrigerate if necessary, heat slice in microwave, enjoy, make simple syrup, boil sugar and water, brush over cooled layers, make chocolate ganache, chop chocolate, heat cream, pour over chocolate, whisk until smooth, cool and thicken, frost cake, make meringue frosting, beat egg whites and sugar, add vanilla, frost cake, make fruit filling or topping, wash and prepare fruit, cut into pieces, mix with sugar and cornstarch, spread over cake layer, top with fresh fruit, make whipped cream frosting, beat heavy cream, add sugar and vanilla, beat until stiff peaks form"""
     st.subheader("Trying out the paper's ideas")
     st.write(
         """
-        Now that we have the technical details out of the way, I want to demo how this might work with a smaller language model. I will be using the [Flan T5 Base](https://huggingface.co/google/flan-t5-base) model.
+        Now that we have the technical details out of the way, I want to demo how this might work with a smaller language model. I will be using the [Flan T5 Small](https://huggingface.co/google/flan-t5-small) model.
         """
     )
     st.write(
@@ -60,7 +74,7 @@ def lm_are_zeroshot_planners(st):
         model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small")
 
         input_ids = tokenizer(prompt, return_tensors="pt").input_ids
-        output = model.generate(input_ids, max_length=20, do_sample=True, num_return_sequences=1, temperature=0.7)
+        output = model.generate(input_ids, max_length=25, do_sample=True, num_return_sequences=1, temperature=0.7)
         output = tokenizer.decode(output[0], skip_special_tokens=True)
         return output
 
@@ -74,7 +88,7 @@ def lm_are_zeroshot_planners(st):
     if 'step_1' in st.session_state and 'fix_step_1' not in st.session_state:
         st.write(
             """
-            Now that we have our generated step we need to map it to a valid action. Ideally this would be using another translator LM like BERT. However, to avoid bloating my website I will just choose the action with the most overlapping words to the generated step.
+            Now that we have our generated step we need to map it to a valid action. Ideally this would be using a \'translator LM\' like BERT to find the most similar enviornment action. However, **to avoid bloating my website I will choose the action with the most overlapping words to the generated text**.
             """
         )
         closest_action = max(actions.split(", "), key=lambda x: len(set(x.split(" ")).intersection(set(st.session_state['step_1'].split(" ")))))
@@ -101,18 +115,10 @@ def lm_are_zeroshot_planners(st):
             st.session_state['step_3'] = closest_action
             st.success(f"Step 3 is :orange[{step_3}] but is mapped to **{closest_action}**", icon="🥮")
 
-    if 'step_3' in st.session_state and 'fix_step_3' in st.session_state:
-        if st.button("Generate Step 4", type="primary"):
-            step_4 = generate_step(prompt=prompt+st.session_state['step_1']+"\n"+st.session_state['step_2']+"\n"+st.session_state['step_3']+"\n").replace(".", "")
-            closest_action = max(actions.split(", "), key=lambda x: len(set(x.split(" ")).intersection(set(step_4.split(" ")))))
-            st.session_state['fix_step_4'] = True
-            st.session_state['step_4'] = closest_action
-            st.success(f"Step 4 is :orange[{step_4}] but is mapped to **{closest_action}**", icon="😋")
-    
     if 'step_3' in st.session_state:
         st.write(
             """
-            We could go on but you get the point! You can now clear the session using the button below and go back and play with the prompt and generate output for different tasks 🥳.
+            We could go on but you get the point! The generations are not bad for a very small language model. As expected scale should drastically helps. You can now clear the session using the button below and go back and play with the prompt and generate output for different tasks 🥳.
             """
         )
 
