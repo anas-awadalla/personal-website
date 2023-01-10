@@ -56,7 +56,7 @@ def lm_are_zeroshot_planners(st):
     )
     st.write(
         """
-        Imagine we are trying to generate steps for making breakfast.
+        Imagine we are trying to generate steps for making a cake.
 
         We will use a single in-context example and format the prompt as follows:          
         """
@@ -66,7 +66,7 @@ def lm_are_zeroshot_planners(st):
 
     st.write(
         """
-        The next step is to generate a single step for making breakfast. In the paper the author's sampled multiple potential completions. For the sake of compute I will just sample a single output.
+        The next step is to generate the first step for making a cake. In the paper the author's sampled multiple potential completions. For the sake of compute I will just sample a single output.
         """
     )
 
@@ -89,7 +89,7 @@ def lm_are_zeroshot_planners(st):
     if 'step_1' in st.session_state and 'fix_step_1' not in st.session_state:
         st.write(
             """
-            Now that we have our generated step we need to map it to a valid action. Ideally this would be using a \'translator LM\' like BERT to find the most similar environment action. However, **to avoid bloating my website I will choose the action with the most overlapping words to the generated text**.
+            Now that we have our generated step we need to map it to a valid action. Ideally this would be using a **translator LM** like BERT to find the most similar environment action. However, **to avoid bloating my website I will choose the action with the most overlapping words to the generated text**.
             """
         )
         closest_action = max(actions.split(", "), key=lambda x: len(set(x.split(" ")).intersection(set(st.session_state['step_1'].split(" ")))))
