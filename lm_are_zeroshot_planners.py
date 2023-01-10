@@ -66,7 +66,7 @@ def lm_are_zeroshot_planners(st):
 
     st.write(
         """
-        The next step is to generate the first step for making a cake. In the paper the author's sampled multiple potential completions. For the sake of compute I will just sample a single output.
+        The next step is to generate the first step for making a cake. In the paper the authors sampled multiple potential completions. For the sake of compute I will just sample a single output.
         """
     )
 
