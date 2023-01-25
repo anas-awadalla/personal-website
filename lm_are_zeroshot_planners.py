@@ -124,8 +124,6 @@ def lm_are_zeroshot_planners(st):
         )
 
     st.write("")
-    st.write("")
-    st.write("")
     if st.button("Clear session (do this at the start of each generation)", type="secondary"):
         for key in st.session_state.keys():
             del st.session_state[key]

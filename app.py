@@ -1,5 +1,6 @@
 import streamlit as st
 from lm_are_zeroshot_planners import lm_are_zeroshot_planners
+from chinchilla import chinchilla
 
 about_tab, blog_tab = st.tabs(["About", "Blog"])
 
@@ -50,4 +51,5 @@ with about_tab:
 with blog_tab:
     st.title("Blog Posts")
     st.write("")
+    chinchilla(st)
     lm_are_zeroshot_planners(st)
