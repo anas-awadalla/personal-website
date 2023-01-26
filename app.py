@@ -8,7 +8,7 @@ with about_tab:
     st.image('profile.jpg', width=300)        
     st.title("Anas Awadalla")
 
-    st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🔗 [LinkedIn](https://www.linkedin.com/in/anas-awadalla/) | 📜 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
+    st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🔗 [LinkedIn](https://www.linkedin.com/in/anas-awadalla/) | 🥼 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
 
     # make a section for bio
     st.header("👋🏽 Bio")
