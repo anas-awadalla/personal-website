@@ -7,7 +7,6 @@ from chinchilla import chinchilla
 about_tab, blog_tab = st.tabs(["About", "Blog"])
 
 with about_tab:
-    st.set_page_config(layout="wide")
     st.image('profile.jpg', width=300)        
     st.title("Anas Awadalla")
 
@@ -52,7 +51,6 @@ with about_tab:
     st.write("Teaching Assistant for [CSE 344](https://sites.google.com/cs.washington.edu/cse344-21au/home?pli=1) in **Fall 2021**")
 
 with blog_tab:
-    st.set_page_config(layout="wide")
     st.title("Blog Posts")
     st.write("")
     chinchilla(st)
