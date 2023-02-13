@@ -3,6 +3,7 @@ st.set_page_config(layout="wide")
 
 from lm_are_zeroshot_planners import lm_are_zeroshot_planners
 from chinchilla import chinchilla
+from scratchpad import scratchpad
 
 about_tab, blog_tab = st.tabs(["About", "Blog"])
 
@@ -53,5 +54,6 @@ with about_tab:
 with blog_tab:
     st.title("Blog Posts")
     st.write("")
+    scratchpad(st)
     chinchilla(st)
     lm_are_zeroshot_planners(st)
