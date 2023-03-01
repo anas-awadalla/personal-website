@@ -37,7 +37,8 @@ with about_tab:
 
     st.header("🏅 Awards")
     st.write("Honorable Mention for [CRA Outstanding Undergraduate Researcher Award 2023](https://cra.org/2023-outstanding-undergraduate-researcher-award-recipients/)")
-
+    st.write("[Article](https://news.cs.washington.edu/2023/01/13/allen-schools-michael-duan-and-anas-awadalla-recognized-by-cra-outstanding-undergraduate-researcher-awards-program/)")
+    
     # make a section for work experience    
     st.header("👨🏽‍💻 Work Experience")
     st.write("Software Engineering Intern at :violet[**Stripe**] in **Summer 2022**")
