@@ -1,11 +1,11 @@
 import streamlit as st
 st.set_page_config(layout="wide")
 
-from lm_are_zeroshot_planners import lm_are_zeroshot_planners
-from chinchilla import chinchilla
-from scratchpad import scratchpad
+# from lm_are_zeroshot_planners import lm_are_zeroshot_planners
+# from chinchilla import chinchilla
+# from scratchpad import scratchpad
 
-about_tab, blog_tab = st.tabs(["About", "Blog"])
+about_tab = st.tabs(["About"])
 
 with about_tab:
     st.image('profile.jpg', width=300)        
@@ -51,9 +51,9 @@ with about_tab:
     st.header("👨🏽‍🏫 Teaching Experience")
     st.write("Teaching Assistant for [CSE 344](https://sites.google.com/cs.washington.edu/cse344-21au/home?pli=1) in **Fall 2021**")
 
-with blog_tab:
-    st.title("Blog Posts")
-    st.write("")
-    scratchpad(st)
-    chinchilla(st)
-    lm_are_zeroshot_planners(st)
+# with blog_tab:
+#     st.title("Blog Posts")
+#     st.write("")
+#     scratchpad(st)
+#     chinchilla(st)
+#     lm_are_zeroshot_planners(st)
