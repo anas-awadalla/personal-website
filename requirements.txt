@@ -1,4 +1,1 @@
-transformers
-torch
-tokenizers
-matplotlib
+streamlit
