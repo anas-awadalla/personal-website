@@ -20,7 +20,11 @@ st.write("""I am a senior at the University of Washington studying computer scie
         I do research in natural language processing, robustness, and vision language models.""")
 
 # make a section for publications
-st.header("📄 Publications")
+st.header("📄 Research")
+st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
+st.write("**Anas Awadalla**, Irena Gao, Joshua Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt")
+st.write("[blog post](https://laion.ai/blog/open-flamingo/) /  [repo](https://github.com/mlfoundations/open_flamingo) / [demo](http://open-flamingo.org/)  /  [tweet](https://twitter.com/anas_awadalla/status/1640766789977251840?s=20)")
+
 st.markdown("##### Exploring The Landscape of Distributional Robustness for Question Answering Models")
 st.write("**Anas Awadalla**, Mitchell Wortsman, Gabriel Ilharco, Sewon Min, Ian Magnusson, Hannaneh Hajishirzi, Ludwig Schmidt")
 st.write("**EMNLP Findings 2022**")
