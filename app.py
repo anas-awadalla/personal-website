@@ -23,13 +23,13 @@ st.write("""I am a senior at the University of Washington studying computer scie
 st.header("📄 Research")
 st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
 st.write("**Anas Awadalla**, Irena Gao, Joshua Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt")
-st.write("[blog post](https://laion.ai/blog/open-flamingo/) /  [repo](https://github.com/mlfoundations/open_flamingo) / [demo](http://open-flamingo.org/)
+st.write("[blog post](https://laion.ai/blog/open-flamingo/) /  [repo](https://github.com/mlfoundations/open_flamingo) / [demo](http://open-flamingo.org/)")
 st.write("")
 
 st.markdown("##### Exploring The Landscape of Distributional Robustness for Question Answering Models")
 st.write("**Anas Awadalla**, Mitchell Wortsman, Gabriel Ilharco, Sewon Min, Ian Magnusson, Hannaneh Hajishirzi, Ludwig Schmidt")
 st.write("**EMNLP Findings 2022**")
-st.write("[paper](https://arxiv.org/abs/2210.12517)  /  [website](https://robustness-evaluation.streamlit.app/)
+st.write("[paper](https://arxiv.org/abs/2210.12517)  /  [website](https://robustness-evaluation.streamlit.app/)")
 with st.expander("Abstract"):
     st.write("*We conduct a large empirical evaluation to investigate the landscape of distributional robustness in question answering. Our investigation spans over 350 models and 16 question answering datasets, including a diverse set of architectures, model sizes, and adaptation methods (e.g., fine-tuning, adapter tuning, in-context learning, etc.). We find that, in many cases, model variations do not affect robustness and in-distribution performance alone determines out-of-distribution performance. Moreover, our findings indicate that i) zero-shot and in-context learning methods are more robust to distribution shifts than fully fine-tuned models; ii) few-shot prompt fine-tuned models exhibit better robustness than few-shot fine-tuned span prediction models; iii) parameter-efficient and robustness enhancing training methods provide no significant robustness improvements. In addition, we publicly release all evaluations to encourage researchers to further analyze robustness trends for question answering models.*")
 st.write("")
