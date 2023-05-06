@@ -15,7 +15,7 @@ st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/ana
 
 # make a section for bio
 st.header("👋🏽 Bio")
-st.write("""I am an incoming PhD student the [Paul Allen School of CS](https://www.cs.washington.edu) at the University of Washington where I will be advised
+st.write("""I am an incoming PhD student at the [University of Washington](https://www.cs.washington.edu) where I will be advised
         by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/).""")
 
 # make a section for publications
