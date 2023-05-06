@@ -11,13 +11,12 @@ import streamlit as st
 st.image('profile.jpg', width=300)        
 st.title("Anas Awadalla")
 
-st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🔗 [LinkedIn](https://www.linkedin.com/in/anas-awadalla/) | 🥼 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
+st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🥼 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
 
 # make a section for bio
 st.header("👋🏽 Bio")
-st.write("""I am a senior at the University of Washington studying computer science, advised
-        by [Prof. Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/). 
-        I do research in natural language processing, robustness, and vision language models.""")
+st.write("""I am an incoming PhD student the [Paul Allen School of CS](https://www.cs.washington.edu) at the University of Washington where I will be advised
+        by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/).""")
 
 # make a section for publications
 st.header("📄 Research")
