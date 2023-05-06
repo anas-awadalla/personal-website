@@ -14,7 +14,7 @@ st.title("Anas Awadalla")
 st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🥼 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
 
 # make a section for bio
-st.header("👋🏽 Bio")
+st.subheader("👋🏽 Bio")
 st.write("""I am an incoming PhD student at the [University of Washington](https://www.cs.washington.edu) where I will be advised
         by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/).""")
 
