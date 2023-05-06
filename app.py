@@ -1,13 +1,5 @@
 import streamlit as st
-# st.set_page_config(layout="wide")
 
-# from lm_are_zeroshot_planners import lm_are_zeroshot_planners
-# from chinchilla import chinchilla
-# from scratchpad import scratchpad
-
-# about_tab = st.tabs(["About"])
-
-# with about_tab:
 st.image('profile.jpg', width=300)        
 st.title("Anas Awadalla")
 
@@ -19,7 +11,7 @@ st.write("""I am an incoming PhD student at the [University of Washington](https
         by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/).""")
 
 # make a section for publications
-st.header("📄 Research")
+st.subheader("📄 Research")
 st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
 st.write("**Anas Awadalla**, Irena Gao, Joshua Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt")
 st.write("[blog post](https://laion.ai/blog/open-flamingo/) /  [repo](https://github.com/mlfoundations/open_flamingo) / [demo](http://open-flamingo.org/)")
@@ -48,11 +40,11 @@ with st.expander("Abstract"):
     st.write("*Unpredictable ML model behavior on unseen data, especially in the health domain, raises serious concerns about its safety as repercussions for mistakes can be fatal. In this paper, we explore the feasibility of using state-of-the-art out-of-distribution detectors for reliable and trustworthy diagnostic predictions. We select publicly available deep learning models relating to various health conditions (e.g., skin cancer, lung sound, and Parkinson's disease) using various input data types (e.g., image, audio, and motion data). We demonstrate that these models show unreasonable predictions on out-of-distribution datasets. We show that Mahalanobis distance- and Gram matrices-based out-of-distribution detection methods are able to detect out-of-distribution data with high accuracy for the health models that operate on different modalities. We then translate the out-of-distribution score into a human interpretable confidence score to investigate its effect on the users' interaction with health ML applications. Our user study shows that the confidence score helped the participants only trust the results with a high score to make a medical decision and disregard results with a low score. Through this work, we demonstrate that dataset shift is a critical piece of information for high-stake ML applications, such as medical diagnosis and healthcare, to provide reliable and trustworthy predictions to the users.*")
 st.write("")
 
-st.header("🏅 Awards")
+st.subheader("🏅 Awards")
 st.write("Honorable Mention for [CRA Outstanding Undergraduate Researcher Award 2023](https://cra.org/2023-outstanding-undergraduate-researcher-award-recipients/) // [article](https://news.cs.washington.edu/2023/01/13/allen-schools-michael-duan-and-anas-awadalla-recognized-by-cra-outstanding-undergraduate-researcher-awards-program/)")
 
 # make a section for work experience    
-st.header("👨🏽‍💻 Work Experience")
+st.subheader("👨🏽‍💻 Work Experience")
 st.write("Software Engineering Intern at :violet[**Stripe**] in **Summer 2022**")
 st.write("")
 
@@ -61,12 +53,5 @@ st.write("")
 
 st.write("Machine Learning Engineering Intern at **[Measure Labs](https://www.measurelabs.com)** in **Spring 2021**")
 
-st.header("👨🏽‍🏫 Teaching Experience")
+st.subheader("👨🏽‍🏫 Teaching Experience")
 st.write("Teaching Assistant for [CSE 344](https://sites.google.com/cs.washington.edu/cse344-21au/home?pli=1) in **Fall 2021**")
-
-# with blog_tab:
-#     st.title("Blog Posts")
-#     st.write("")
-#     scratchpad(st)
-#     chinchilla(st)
-#     lm_are_zeroshot_planners(st)
