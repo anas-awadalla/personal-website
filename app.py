@@ -52,6 +52,3 @@ st.write("Software Engineering Intern at :orange[**Amazon**] in **Summer 2021**"
 st.write("")
 
 st.write("Machine Learning Engineering Intern at **[Measure Labs](https://www.measurelabs.com)** in **Spring 2021**")
-
-st.subheader("👨🏽‍🏫 Teaching Experience")
-st.write("Teaching Assistant for [CSE 344](https://sites.google.com/cs.washington.edu/cse344-21au/home?pli=1) in **Fall 2021**")
