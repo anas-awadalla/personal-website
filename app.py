@@ -7,8 +7,8 @@ st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/ana
 
 # make a section for bio
 st.subheader("👋🏽 Bio")
-st.write("""I am an incoming PhD student at the [University of Washington](https://www.cs.washington.edu) where I will be advised
-        by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/). I am currently excited about training large multimodal models.""")
+st.write("""I am a PhD student at the [University of Washington](https://www.cs.washington.edu) advised
+        by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/). I am currently excited about large multimodal models.""")
 
 # make a section for publications
 st.subheader("📄 Research")
