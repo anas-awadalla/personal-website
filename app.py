@@ -12,6 +12,13 @@ st.write("""I am a PhD student at the [University of Washington](https://www.cs.
 
 # make a section for publications
 st.subheader("📄 Research")
+st.markdown("##### VisIT-Bench: A Benchmark for Vision-Language Instruction Following Inspired by Real-World Use")
+st.write("Yonatan Bitton*, Hritik Bansal*, Jack Hessel*, Rulin Shao, Wanrong Zhu, Anas Awadalla, Josh Gardner, Rohan Taori, Ludwig Schimdt")
+st.write("[paper](https://arxiv.org/abs/2308.06595) / [repo](https://github.com/mlfoundations/VisIT-Bench/)")
+with st.expander("Abstract"):
+    st.write("*We introduce VisIT-Bench (Visual InsTruction Benchmark), a benchmark for evaluation of instruction-following vision-language models for real-world use. Our starting point is curating 70 'instruction families' that we envision instruction tuned vision-language models should be able to address. Extending beyond evaluations like VQAv2 and COCO, tasks range from basic recognition to game playing and creative generation. Following curation, our dataset comprises 592 test queries, each with a human-authored instruction-conditioned caption. These descriptions surface instruction-specific factors, e.g., for an instruction asking about the accessibility of a storefront for wheelchair users, the instruction-conditioned caption describes ramps/potential obstacles. These descriptions enable 1) collecting human-verified reference outputs for each instance; and 2) automatic evaluation of candidate multimodal generations using a text-only LLM, aligning with human judgment. We quantify quality gaps between models and references using both human and automatic evaluations; e.g., the top-performing instruction-following model wins against the GPT-4 reference in just 27% of the comparison.*")
+st.write("")
+
 st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
 st.write("**Anas Awadalla***, Irena Gao*, Joshua Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt")
 st.write("[paper](https://arxiv.org/abs/2308.01390) / [blog post 1](https://laion.ai/blog/open-flamingo/) / [blog post 2](https://laion.ai/blog/open-flamingo-v2/) /  [repo](https://github.com/mlfoundations/open_flamingo) / [demo](https://huggingface.co/spaces/openflamingo/OpenFlamingo)")
