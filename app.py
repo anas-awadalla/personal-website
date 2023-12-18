@@ -58,6 +58,3 @@ st.write("Software Engineering Intern at :violet[**Stripe**] in **Summer 2022**"
 st.write("")
 
 st.write("Software Engineering Intern at :orange[**Amazon**] in **Summer 2021**")
-st.write("")
-
-st.write("Machine Learning Engineering Intern at **[Measure Labs](https://www.measurelabs.com)** in **Spring 2021**")
