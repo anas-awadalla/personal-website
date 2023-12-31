@@ -20,6 +20,7 @@ st.write("")
 
 st.markdown("##### VisIT-Bench: A Benchmark for Vision-Language Instruction Following Inspired by Real-World Use")
 st.write("Yonatan Bitton*, Hritik Bansal*, Jack Hessel*, Rulin Shao, Wanrong Zhu, **Anas Awadalla**, Josh Gardner, Rohan Taori, Ludwig Schimdt")
+st.write("**Neurips 2023**")
 st.write("[paper](https://arxiv.org/abs/2308.06595) / [repo](https://github.com/mlfoundations/VisIT-Bench/)")
 st.write("")
 
@@ -30,6 +31,7 @@ st.write("")
 
 st.markdown("##### Multimodal C4: An Open, Billion-scale Corpus of Images Interleaved With Text")
 st.write("Wanrong Zhu*, Jack Hessel*, **Anas Awadalla**, Samir Yitzhak Gadre, Jesse Dodge, Alex Fang, Youngjae Yu, Ludwig Schmidt, William Yang Wang, Yejin Choi")
+st.write("**Neurips 2023**")
 st.write("[paper](https://arxiv.org/abs/2304.06939) / [repo](https://github.com/allenai/mmc4)")
 st.write("")
 
@@ -41,7 +43,7 @@ st.write("")
 
 st.markdown("##### Reliable and Trustworthy Machine Learning for Health Using Dataset Shift Detection")
 st.write("Chunjong Park, **Anas Awadalla**, Tadayoshi Kohno, Shwetak Patel")
-st.write("**NeurIPS 2021**")
+st.write("**Neurips 2021**")
 st.write("[paper](https://arxiv.org/abs/2110.14019)")
 st.write("")
 
