@@ -53,6 +53,4 @@ st.write("Honorable Mention for [CRA Outstanding Undergraduate Researcher Award 
 # make a section for work experience    
 st.subheader("👨🏽‍💻 Work Experience")
 st.write("Software Engineering Intern at :violet[**Stripe**] in **Summer 2022**")
-st.write("")
-
 st.write("Software Engineering Intern at :orange[**Amazon**] in **Summer 2021**")
