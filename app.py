@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Anas Awadalla")
+
 st.image('profile.jpg', width=300)        
 st.title("Anas Awadalla")
 
