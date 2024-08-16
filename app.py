@@ -68,11 +68,11 @@ st.write("**Neurips 2021**")
 st.write("[paper](https://arxiv.org/abs/2110.14019)")
 st.write("")
 
-st.subheader("🏅 Awards")
-st.write("Honorable Mention for [CRA Outstanding Undergraduate Researcher Award 2023](https://cra.org/2023-outstanding-undergraduate-researcher-award-recipients/) // [article](https://news.cs.washington.edu/2023/01/13/allen-schools-michael-duan-and-anas-awadalla-recognized-by-cra-outstanding-undergraduate-researcher-awards-program/)")
-
 # make a section for work experience    
 st.subheader("👨🏽‍💻 Work Experience")
 st.write("AI Research Intern at :blue[**Salesforce Research**] in **2024**")
 st.write("Software Engineering Intern at :violet[**Stripe**] in **Summer 2022**")
 st.write("Software Engineering Intern at :orange[**Amazon**] in **Summer 2021**")
+
+st.subheader("🏅 Awards")
+st.write("Honorable Mention for [CRA Outstanding Undergraduate Researcher Award 2023](https://cra.org/2023-outstanding-undergraduate-researcher-award-recipients/) // [article](https://news.cs.washington.edu/2023/01/13/allen-schools-michael-duan-and-anas-awadalla-recognized-by-cra-outstanding-undergraduate-researcher-awards-program/)")
