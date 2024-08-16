@@ -21,7 +21,7 @@ st.write("[paper](https://arxiv.org/abs/2406.11271) / [blog post](https://blog.s
 st.write("")
 
 st.markdown("##### xGen-MM (BLIP-3): A Family of Open Large Multimodal Models")
-st.write("Le Xue, Manli Shu, **Anas Awadalla**, Jun Wang, ..., Ran Xu")
+st.write("Le Xue, Manli Shu, **Anas Awadalla**, Jun Wang, An Yan, Senthil Purushwalkam, Honglu Zhou, many others, Caiming Xiong, Ran Xu")
 st.write("**Preprint 2024**")
 st.write("[models](https://huggingface.co/collections/Salesforce/xgen-mm-1-models-662971d6cecbf3a7f80ecc2e)")
 st.write("")
@@ -29,6 +29,7 @@ st.write("")
 st.markdown("##### Certainly Uncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness")
 st.write("Khyathi Raghavi Chandu, Linjie Li, **Anas Awadalla**, Ximing Lu, Jae Sung Park, Jack Hessel, Lijuan Wang, Yejin Choi")
 st.write("**Preprint 2024**")
+st.write("[paper](https://arxiv.org/abs/2407.01942)")
 st.write("")
 
 st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
