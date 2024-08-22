@@ -23,7 +23,7 @@ st.write("")
 st.markdown("##### xGen-MM (BLIP-3): A Family of Open Large Multimodal Models")
 st.write("Le Xue, Manli Shu, **Anas Awadalla**, Jun Wang, An Yan, Senthil Purushwalkam, Honglu Zhou, Viraj Prabhu, Yutong Dai, Michael S Ryoo, Shrikant Kendre, Jieyu Zhang, many others, Caiming Xiong, Ran Xu")
 st.write("**Preprint 2024**")
-st.write("[paper](https://arxiv.org/abs/2408.08872) / [models](https://huggingface.co/collections/Salesforce/xgen-mm-1-models-662971d6cecbf3a7f80ecc2e)")
+st.write("[paper](https://arxiv.org/abs/2408.08872) / [models](https://huggingface.co/collections/Salesforce/xgen-mm-1-models-662971d6cecbf3a7f80ecc2e) / [repo](https://github.com/salesforce/LAVIS/tree/xgen-mm)")
 st.write("")
 
 st.markdown("##### Certainly Uncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness")
