@@ -17,7 +17,7 @@ st.subheader("📄 Research")
 st.markdown("##### 🍃 MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens")
 st.write("**Anas Awadalla**, Le Xue, Oscar Lo, Manli Shu, Hannah Lee, Etash Kumar Guha, Matt Jordan, Sheng Shen, Mohamed Awadalla, Silvio Savarese, Caiming Xiong, Ran Xu, Yejin Choi, Ludwig Schmidt")
 st.write("**Preprint 2024**")
-st.write("[paper](https://arxiv.org/abs/2406.11271) / [blog post](https://blog.salesforceairesearch.com/mint-1t/) / [repo](https://github.com/mlfoundations/MINT-1T) / [press - VentureBeat]("https://venturebeat.com/ai/how-salesforces-mint-1t-dataset-could-disrupt-the-ai-industry/")")
+st.write("[paper](https://arxiv.org/abs/2406.11271) / [blog post](https://blog.salesforceairesearch.com/mint-1t/) / [repo](https://github.com/mlfoundations/MINT-1T) / [press - VentureBeat](https://venturebeat.com/ai/how-salesforces-mint-1t-dataset-could-disrupt-the-ai-industry/)")
 st.write("")
 
 st.markdown("##### xGen-MM (BLIP-3): A Family of Open Large Multimodal Models")
