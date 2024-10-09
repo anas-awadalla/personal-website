@@ -10,11 +10,10 @@ st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/ana
 # make a section for bio
 st.subheader("👋🏽 Bio")
 st.write("""I am a PhD student at the [University of Washington](https://www.cs.washington.edu) advised
-        by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/). I am currently excited about large-scale multimodal datasets and multimodal models. Previously I was an AI research intern at Salesforce Research and a SWE intern at Stripe and Amazon.""")
+        by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/). I am currently excited about large-scale multimodal datasets and multimodal models.""")
 
 # make a section for publications
-st.subheader("📄 Selected Projects")
-st.markdown("**refer to [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ) for the full list**")
+st.subheader("📄 Research")
 st.markdown("##### 🍃 MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens")
 st.write("**Anas Awadalla**, Le Xue, Oscar Lo, Manli Shu, Hannah Lee, Etash Kumar Guha, Matt Jordan, Sheng Shen, Mohamed Awadalla, Silvio Savarese, Caiming Xiong, Ran Xu, Yejin Choi, Ludwig Schmidt")
 st.write("**Preprint 2024**")
@@ -25,6 +24,12 @@ st.markdown("##### xGen-MM (BLIP-3): A Family of Open Large Multimodal Models")
 st.write("Le Xue, Manli Shu, **Anas Awadalla**, Jun Wang, An Yan, Senthil Purushwalkam, Honglu Zhou, Viraj Prabhu, Yutong Dai, Michael S Ryoo, Shrikant Kendre, Jieyu Zhang, many others, Caiming Xiong, Ran Xu")
 st.write("**Preprint 2024**")
 st.write("[paper](https://arxiv.org/abs/2408.08872) / [models](https://huggingface.co/collections/Salesforce/xgen-mm-1-models-662971d6cecbf3a7f80ecc2e) / [repo](https://github.com/salesforce/LAVIS/tree/xgen-mm)")
+st.write("")
+
+st.markdown("##### Certainly Uncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness")
+st.write("Khyathi Raghavi Chandu, Linjie Li, **Anas Awadalla**, Ximing Lu, Jae Sung Park, Jack Hessel, Lijuan Wang, Yejin Choi")
+st.write("**Preprint 2024**")
+st.write("[paper](https://arxiv.org/abs/2407.01942)")
 st.write("")
 
 st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
@@ -39,11 +44,35 @@ st.write("**Neurips 2023**")
 st.write("[paper](https://arxiv.org/abs/2304.06939) / [repo](https://github.com/allenai/mmc4)")
 st.write("")
 
+st.markdown("##### Catwalk: A Unified Language Model Evaluation Framework for Many Datasets")
+st.write("Dirk Groeneveld, **Anas Awadalla**, Iz Beltagy, Akshita Bhagia, Ian Magnusson, Hao Peng, Oyvind Tafjord, Pete Walsh, Kyle Richardson, Jesse Dodge")
+st.write("**Preprint 2023**")
+st.write("[paper](https://arxiv.org/abs/2312.10253) / [repo](https://github.com/allenai/catwalk)")
+st.write("")
+
+st.markdown("##### VisIT-Bench: A Benchmark for Vision-Language Instruction Following Inspired by Real-World Use")
+st.write("Yonatan Bitton*, Hritik Bansal*, Jack Hessel*, Rulin Shao, Wanrong Zhu, **Anas Awadalla**, Josh Gardner, Rohan Taori, Ludwig Schimdt")
+st.write("**Neurips 2023**")
+st.write("[paper](https://arxiv.org/abs/2308.06595) / [repo](https://github.com/mlfoundations/VisIT-Bench/)")
+st.write("")
+
 st.markdown("##### Exploring The Landscape of Distributional Robustness for Question Answering Models")
 st.write("**Anas Awadalla**, Mitchell Wortsman, Gabriel Ilharco, Sewon Min, Ian Magnusson, Hannaneh Hajishirzi, Ludwig Schmidt")
 st.write("**EMNLP 2022**")
 st.write("[paper](https://arxiv.org/abs/2210.12517)  /  [website](https://robustness-evaluation.streamlit.app/)")
 st.write("")
+
+st.markdown("##### Reliable and Trustworthy Machine Learning for Health Using Dataset Shift Detection")
+st.write("Chunjong Park, **Anas Awadalla**, Tadayoshi Kohno, Shwetak Patel")
+st.write("**Neurips 2021**")
+st.write("[paper](https://arxiv.org/abs/2110.14019)")
+st.write("")
+
+# make a section for work experience    
+st.subheader("👨🏽‍💻 Work Experience")
+st.write("AI Research Intern at :blue[**Salesforce Research**] in **2024**")
+st.write("Software Engineering Intern at :violet[**Stripe**] in **Summer 2022**")
+st.write("Software Engineering Intern at :orange[**Amazon**] in **Summer 2021**")
 
 st.subheader("🏅 Awards")
 st.write("Honorable Mention for [CRA Outstanding Undergraduate Researcher Award 2023](https://cra.org/2023-outstanding-undergraduate-researcher-award-recipients/) // [article](https://news.cs.washington.edu/2023/01/13/allen-schools-michael-duan-and-anas-awadalla-recognized-by-cra-outstanding-undergraduate-researcher-awards-program/)")
