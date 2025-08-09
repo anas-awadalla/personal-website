@@ -17,7 +17,7 @@ st.subheader("📄 Research")
 st.markdown("##### 🥬 BLIP3-KALE: Knowledge Augmented Large-Scale Dense Captions")
 st.write("**Anas Awadalla**, Le Xue, Manli Shu, An Yan, Jun Wang, Senthil Purushwalkam, Sheng Shen, Hannah Lee, Oscar Lo, Jae Sung Park, Etash Guha, Silvio Savarese, Ludwig Schmidt, Yejin Choi, Caiming Xiong, Ran Xu")
 st.write("**Best Paper at the Synthetic Data for Computer Vision Workshop @ CVPR 2025**")
-st.write("[paper](https://arxiv.org/abs/2411.07461) / [repo](https://huggingface.co/datasets/Salesforce/blip3-kale)
+st.write("[paper](https://arxiv.org/abs/2411.07461) / [repo](https://huggingface.co/datasets/Salesforce/blip3-kale)")
 st.write("")
 
 st.markdown("##### 🍃 MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens")
