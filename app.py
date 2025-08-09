@@ -5,18 +5,24 @@ st.set_page_config(page_title="Anas Awadalla")
 st.image('profile.jpg', width=300)        
 st.title("Anas Awadalla")
 
-st.write("📫 anasa2@cs.washington.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🥼 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
+st.write("📫 anasa@stanford.edu | 🐦 [Twitter](https://twitter.com/anas_awadalla) | 🥼 [Google Scholar](https://scholar.google.com/citations?hl=en&user=gMOjp_oAAAAJ)")
 
 # make a section for bio
 st.subheader("👋🏽 Bio")
-st.write("""I am a PhD student at the [University of Washington](https://www.cs.washington.edu) advised
+st.write("""I am a PhD student at the Stanford advised
         by [Yejin Choi](https://homes.cs.washington.edu/~yejin/) and [Ludwig Schmidt](http://people.csail.mit.edu/ludwigs/). I am currently excited about large-scale multimodal datasets and multimodal models.""")
 
 # make a section for publications
 st.subheader("📄 Research")
+st.markdown("##### 🥬 BLIP3-KALE: Knowledge Augmented Large-Scale Dense Captions")
+st.write("**Anas Awadalla**, Le Xue, Manli Shu, An Yan, Jun Wang, Senthil Purushwalkam, Sheng Shen, Hannah Lee, Oscar Lo, Jae Sung Park, Etash Guha, Silvio Savarese, Ludwig Schmidt, Yejin Choi, Caiming Xiong, Ran Xu")
+st.write("**Best Paper at the Synthetic Data for Computer Vision Workshop @ CVPR 2025**")
+st.write("[paper](https://arxiv.org/abs/2411.07461) / [repo](https://huggingface.co/datasets/Salesforce/blip3-kale)
+st.write("")
+
 st.markdown("##### 🍃 MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens")
 st.write("**Anas Awadalla**, Le Xue, Oscar Lo, Manli Shu, Hannah Lee, Etash Kumar Guha, Matt Jordan, Sheng Shen, Mohamed Awadalla, Silvio Savarese, Caiming Xiong, Ran Xu, Yejin Choi, Ludwig Schmidt")
-st.write("**Preprint 2024**")
+st.write("**Neurips 2024**")
 st.write("[paper](https://arxiv.org/abs/2406.11271) / [blog post](https://blog.salesforceairesearch.com/mint-1t/) / [repo](https://github.com/mlfoundations/MINT-1T) / [press - VentureBeat](https://venturebeat.com/ai/how-salesforces-mint-1t-dataset-could-disrupt-the-ai-industry/)")
 st.write("")
 
@@ -28,7 +34,7 @@ st.write("")
 
 st.markdown("##### Certainly Uncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness")
 st.write("Khyathi Raghavi Chandu, Linjie Li, **Anas Awadalla**, Ximing Lu, Jae Sung Park, Jack Hessel, Lijuan Wang, Yejin Choi")
-st.write("**Preprint 2024**")
+st.write("**ICLR 2025**")
 st.write("[paper](https://arxiv.org/abs/2407.01942)")
 st.write("")
 
