@@ -19,7 +19,7 @@ st.subheader("⭐ Selected Research")
 
 st.markdown("##### 🦩 OpenFlamingo: An Open-Source Framework for Training Vision-Language Models with In-Context Learning")
 st.write("**Anas Awadalla***, Irena Gao*, Joshua Gardner, Jack Hessel, Yusuf Hanafy, Wanrong Zhu, Kalyani Marathe, Yonatan Bitton, Samir Gadre, Shiori Sagawa, Jenia Jitsev, Simon Kornblith, Pang Wei Koh, Gabriel Ilharco, Mitchell Wortsman, Ludwig Schmidt")
-st.write("**Preprint 2023**")
+st.write("**Technical Report**")
 st.write("[paper](https://arxiv.org/abs/2308.01390) / [blog 1](https://laion.ai/blog/open-flamingo/) / [blog 2](https://laion.ai/blog/open-flamingo-v2/) / [repo](https://github.com/mlfoundations/open_flamingo) / [demo](https://huggingface.co/spaces/openflamingo/OpenFlamingo)")
 st.write("")
 
@@ -31,6 +31,7 @@ st.write("")
 
 st.markdown("##### 🍨 Gelato — From Data Curation to Reinforcement Learning: Building a Strong Grounding Model for Computer-Use Agents")
 st.write("**Anas Awadalla**, Dhruba Ghosh, Aylin Akkus, Yuhui Zhang, Marianna Nezhurina, Jenia Jitsev, Yejin Choi, Ludwig Schmidt")
+st.write("**Blog Post**")
 st.write("[blog](https://github.com/mlfoundations/gelato)")
 st.write("")
 
