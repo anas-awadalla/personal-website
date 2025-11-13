@@ -30,7 +30,7 @@ st.write("[paper](https://arxiv.org/abs/2406.11271) / [blog](https://blog.salesf
 st.write("")
 
 st.markdown("##### 🍨 Gelato — From Data Curation to Reinforcement Learning: Building a Strong Grounding Model for Computer-Use Agents")
-st.write("**Anas Awadalla**, Dhruba Ghosh, Aylin Akkus, Yuhui Zhang, Marianna Nezhurina; Advisors: Jenia Jitsev, Yejin Choi, Ludwig Schmidt")
+st.write("**Anas Awadalla**, Dhruba Ghosh, Aylin Akkus, Yuhui Zhang, Marianna Nezhurina, Jenia Jitsev, Yejin Choi, Ludwig Schmidt")
 st.write("[blog](https://github.com/mlfoundations/gelato)")
 st.write("")
 
