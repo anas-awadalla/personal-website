@@ -23,7 +23,7 @@ st.write("**Preprint 2023**")
 st.write("[paper](https://arxiv.org/abs/2308.01390) / [blog 1](https://laion.ai/blog/open-flamingo/) / [blog 2](https://laion.ai/blog/open-flamingo-v2/) / [repo](https://github.com/mlfoundations/open_flamingo) / [demo](https://huggingface.co/spaces/openflamingo/OpenFlamingo)")
 st.write("")
 
-st.markdown("##### 🍃 MINT-1T: Scaling Open-Source Multimodal Data by 10x")
+st.markdown("##### 🍃 MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens")
 st.write("**Anas Awadalla**, Le Xue, Oscar Lo, Manli Shu, Hannah Lee, Etash Kumar Guha, Matt Jordan, Sheng Shen, Mohamed Awadalla, Silvio Savarese, Caiming Xiong, Ran Xu, Yejin Choi, Ludwig Schmidt")
 st.write("**Neurips 2024**")
 st.write("[paper](https://arxiv.org/abs/2406.11271) / [blog](https://blog.salesforceairesearch.com/mint-1t/) / [repo](https://github.com/mlfoundations/MINT-1T) / [press](https://venturebeat.com/ai/how-salesforces-mint-1t-dataset-could-disrupt-the-ai-industry/)")
